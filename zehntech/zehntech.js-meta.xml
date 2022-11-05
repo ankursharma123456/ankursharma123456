@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="testCMS">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets> 
+    <targetConfigs>
+
+        <targetConfig targets="lightningCommunity__Default">
+            <!-- Network name -->
+            <property name="networkName"  type="String" label="Please provide your Network Name" />
+             <!-- first profile -->
+            <property name="contentId" type="ContentReference" filter="cms_image" default="" label="Select Image For First Profile "/>
+            <property name="name" type="String" label="Enter Name"/>
+            <property name="position" type="String"  label="Enter Position"></property>
+            <property name="email" type="String"  label="Enter Your EmailId"></property>
+
+            <property name="facebook" type="String" label="Enter your facbook profile Url" />
+            <property name="linkdin" type="String" label="Enter your linkdin profile Url" />
+            <property name="instagram" type="String" label="Enter your instagram profile Url" />
+
+            <!-- Second Profile -->
+             
+            <property name="contentId2" type="ContentReference" filter="cms_image" default="" label="Select Image For Second Profile"/>
+            <property name="name1" type="String" label="Enter Name"/>
+            <property name="position1" type="String"  label="Enter Position"></property>
+            <property name="email1" type="String"  label="Enter Your EmailId"></property>
+           
+            <!-- third profile -->
+            <property name="contentId3" type="ContentReference" filter="cms_image" default="" label="Select Image For Third Profile"/>
+            <property name="name2" type="String" label="Enter Name"/>
+            <property name="position2" type="String"  label="Enter Position"></property>
+            <property name="email2" type="String"  label="Enter Your EmailId"></property>
+            
+<!-- four profile -->
+            <property name="contentId4" type="ContentReference" filter="cms_image" default="" label="Select Image For Profile"/>
+            <property name="name3" type="String" label="Enter Name"/>
+            <property name="position3" type="String"  label="Enter Position"></property>
+            <property name="email3" type="String"  label="Enter Your EmailId"></property>
+<!-- fifth profile -->
+            <property name="contentId5" type="ContentReference" filter="cms_image" default="" label="Select Image For Profile"/>
+            <property name="name4" type="String" label="Enter Name"/>
+            <property name="position4" type="String"  label="Enter Position"></property>
+            <property name="email4" type="String"  label="Enter Your EmailId"></property>
+<!-- Sixth profile -->
+            <property name="contentId6" type="ContentReference" filter="cms_image" default="" label="Select Image For Profile"/> 
+            <property name="name5" type="String" label="Enter Name"/>
+            <property name="position5" type="String"  label="Enter Position"></property>
+            <property name="email5" type="String"  label="Enter Your EmailId"></property>
+<!-- Seven profile -->
+            <property name="contentId7" type="ContentReference" filter="cms_image" default="" label="Select Image For Profile"/>
+            <property name="name6" type="String" label="Enter Name"/>
+            <property name="position6" type="String"  label="Enter Position"></property>
+            <property name="email6" type="String"  label="Enter Your EmailId"></property>
+<!-- Eight profile -->
+            <property name="contentId8" type="ContentReference" filter="cms_image" default="" label="Select Image For Profile"/>
+            <property name="name7" type="String" label="Enter Name"/>
+            <property name="position7" type="String"  label="Enter Position"></property>
+            <property name="email7" type="String"  label="Enter Your EmailId"></property>
+
+            
+
+          
+           
+        </targetConfig>
+
+    </targetConfigs>
+</LightningComponentBundle>
