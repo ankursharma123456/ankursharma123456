@@ -1,0 +1,351 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="12" padding="around-small">
+            <a class="prev" style="margin-left: 80px;" onclick={previous}>&#10094;</a>
+            <!-- Container -->
+            <div class="myContainer">
+                <div data-id="firstDiv" class="mySlider slds-grid slds-gutters">
+                    <!-- first profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4 ">
+                         <template if:true={firstdiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name}</span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template> 
+                    
+                    </div>
+                    <!-- Second Profile Div -->
+
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                         <template if:true={seconddiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl2} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name1} </span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position1}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template> 
+                       
+                    </div>
+
+                    <!-- third Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                         <template if:true={thirddiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl3} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name2} </span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position2}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template> 
+                       
+                    </div>
+                    <!-- Four Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                         <template if:true={fourdiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl4} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > 
+                                                <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name3} </span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position3}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template> 
+                       
+                    </div>
+                    <!-- fifth Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={fivediv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl5} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name4} </span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position4}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template> 
+                       
+                    </div>
+                    <!-- Six Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                         <template if:true={sixdiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl6} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name5}</span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position5}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template>
+                     
+                    </div>
+                    <!-- Seven Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                         <template if:true={sevendiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl7} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name6} </span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position6}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template> 
+                       
+                    </div>
+                    <!-- Eight Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={eightdiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl8} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name7} </span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position7}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template>           
+                    </div>
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                         <template if:true={eightdiv}>
+                            <lightning-card>
+                                <div class="slds-var-p-horizontal_small ">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col image">
+                                            <span> <img
+                                                    src={imageUrl9} class="userimage" />
+                                            </span>
+                                        </div>
+                                        <div class="slds-col">
+                                            <span > <lightning-card>
+                                                <div class="teams1 teams">
+                                                <div class="slds-grid slds-grid_vertical" style="height:200px;">
+                                                    <div class="slds-col" style="text-align: center; margin-top :18px;">
+                                                        <span>Social Media </span>
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center; margin:-71px;">
+                                                        <span class="name">{name8} </span>
+                                                        <hr class="line">
+                                                    </div>
+                                                    <div class="slds-col" style="text-align: center;">
+                                                        <span class="position">{position8}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </lightning-card>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </lightning-card>
+                        </template> 
+                       
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+
+
+            </div>
+            <a class="next" style="margin-right:90px" onclick={next}>&#10095;</a>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
