@@ -8,7 +8,7 @@
     position: relative;
     margin: auto;
     overflow: hidden;
-    /* border-radius: 4px; */
+  
   }
   .mySlider {
     height: inherit;
@@ -26,20 +26,27 @@
     width: 229px;
     margin-left: 27px;
     background-color: white;
-    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    /* box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    
     border-radius: 8px;
 }
 .line{
-    width: 157px;
-    background-color: #0000f4;
-    margin-left: 81px;
-    margin-top: 9px;
+    width: 120px;
+    background-color: purple;
+    margin-left: 115px;
+    margin-top: 4px;
     margin-bottom: -10px;
+    border: 0px solid purple;
 }
 img.userimage {
     height: 232px;
     width: 277px;
-    border-radius: 9px;
+    border-radius: 10px;
+}
+.icon{
+
+  margin-left: 67px;
 }
   
   .prev,
@@ -66,16 +73,12 @@ img.userimage {
   .next:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
-  /* img{
-      border-radius:50%;
-     max-width: 123%;
-     max-height: 123px;
+ /* img{
+    
   
      border-radius: var(--my-bdradius);
-     max-width: var(--my-mxwidth);
-     max-height: var(--my-mxheight);
 
-  } */
+  }  */
   
   /* ---------change the color and size--------  */
 .name {
@@ -87,16 +90,7 @@ img.userimage {
   color: var(--my-color1) !important;
   font-size: var(--my-size1);    
 }
-/* .email{
-  
-  color: var(--my-color2) !important;
-  font-size: var(--my-size2);
-  
-} */
-/* .mobno{
-  color: var(--my-color4) !important;
-  font-size: var(--my-size4);
-} */
+
 .socialLink>img{
   height: var(--my-size3);
 
@@ -112,18 +106,6 @@ a.next {
   color: var(--my-prev);
 }
 
-
-/* lightning-card{
-   --slds-c-card-radius-border: 30px; 
-  border-radius: var(--slds-c-card-radius-border, 30rem);
-} */
-
- .slds-card{
-  
-  --slds-c-card-color-background:var(--my-bgclr);
-  /* /--slds-c-card-radius-border: 30px;  */
-
-}    
 
 lightning-card.slds-card {
   border: none;

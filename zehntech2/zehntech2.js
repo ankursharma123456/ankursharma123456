@@ -1,12 +1,19 @@
 import { LightningElement,api,wire,track } from 'lwc';
 import { loadStyle} from "lightning/platformResourceLoader";
+import teamsicons from '@salesforce/resourceUrl/teamsicons';
 import customSR from "@salesforce/resourceUrl/custom"
-import getManagedContentByContentKeys from "@salesforce/apex/ManagedContentCtrlrrr.getContent";
+import getManagedContentByContentKeys from "@salesforce/apex/ManagedContentCtrl3.getContent"; //testclass:ManagedContentCtrlTest3
 import basePath from "@salesforce/community/basePath";
 
 var network
 
 export default class Zehntech2 extends LightningElement {
+
+  
+  @api facebookicon = teamsicons + '/icon/icons8-facebook.svg';
+  @api instagramicon = teamsicons + '/icon/icons8-instagram.svg';
+  @api linkdinicon = teamsicons + '/icon/icons8-linkedin.svg';
+  
     @api networkName;
     
 
@@ -97,36 +104,17 @@ export default class Zehntech2 extends LightningElement {
      @api position7 = '';
      @api position8 = '';
      
-    //  @api email ;
-    //  @api email1 ;
-    //  @api email2 ;
-    //  @api email3 ;
-    //  @api email4 ;
-    //  @api email5 ;
-    //  @api email6 ;
-    //  @api email7 ;
-    //  @api email8 ;
-
-    //  @api mobno ;
-    //  @api mobno1 ;
-    //  @api mobno2 ;
-    //  @api mobno3 ;
-    //  @api mobno4 ;
-    //  @api mobno5 ;
-    //  @api mobno6 ;
-    //  @api mobno7 ;
-    //  @api mobno8 ;
-
+   
      //first div show and hide of social icon
 
      get firstfacebook(){
       return !!this.facebook;
      }
-     get firstLinkedin(){
-      return !!this.linkdin;
-     }
      get firstInsta(){
       return !!this.instagram;
+     }
+     get firstLinkedin(){
+      return !!this.linkdin;
      }
 
      //second div show and hide
@@ -138,7 +126,7 @@ export default class Zehntech2 extends LightningElement {
       return !!this.linkdin1;
      }
 
-     get secondlinkedin(){
+     get secondinstagram(){
       return !!this.instagram1;
      }
 
@@ -525,48 +513,13 @@ export default class Zehntech2 extends LightningElement {
       .querySelector("lightning-layout-item")
       .style.setProperty("--my-color1", this.namecolor1);
 
-       //Email
-       this.template
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-size2", this.namefontsize2);
-
-      this.template
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-color2", this.namecolor2);
-
-       //Change the font color and font size of mobile 
-       this.template
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-size4", this.namefontsize4);
-
-      this.template
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-color4", this.namecolor4);
-
+  
       //Social Media Icon Size
-      this.template
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-size3", this.namefontsize3);
+    
 
       this.template     //change the social media icon color
       .querySelector("lightning-layout-item")
-      .style.setProperty("--my-prev", this.prev);
-
-      this.template     //change the border-radius of image
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-bdradius", this.bdradius);
-
-      this.template     //change the max-width of image
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-mxwidth", this.mxwidth);
-
-      this.template     //change the max-height of image
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-mxheight", this.mxheight);
-
-      this.template     //change the bgcolor of image
-      .querySelector("lightning-layout-item")
-      .style.setProperty("--my-layout-color", this.bgdcolor);
+      .style.setProperty("--my-prev", this.prev);  
 
      }
 
@@ -590,7 +543,7 @@ export default class Zehntech2 extends LightningElement {
              } else {
                  this.previous();
              }
-         }, 800000);
+         }, 8000);
      }
 
      previous() {
@@ -657,8 +610,5 @@ export default class Zehntech2 extends LightningElement {
   @api namefontsize4;
   @api prev;
   @api bgdcolor;
-  @api bdradius;
-  @api mxwidth;
-  @api mxheight;
 
 }
