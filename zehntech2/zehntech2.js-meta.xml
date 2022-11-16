@@ -29,6 +29,9 @@
 
              <!-- first profile -->
             <property name="contentId" type="ContentReference" filter="cms_image" default="" label="Select image for first profile "/>
+             <!-- Clear image property -->
+            <property name="footer1" type="Boolean" label="Clear Image"/> 
+
             <property name="name" type="String" label="Enter Name"/>
             <property name="position" type="String"  label="Enter Position"></property>
            
@@ -40,6 +43,7 @@
             <!-- Second Profile -->
              
             <property name="contentId2" type="ContentReference" filter="cms_image" default="" label="Select image for second profile"/>
+             <property name="footer2" type="Boolean" label="Clear Image"/> 
             <property name="name1" type="String" label="Enter Name"/>
             <property name="position1" type="String"  label="Enter Position"></property>
            
@@ -51,6 +55,7 @@
     <!-- third profile -->
     
             <property name="contentId3" type="ContentReference" filter="cms_image" default="" label="Select image for third profile"/>
+             <property name="footer3" type="Boolean" label="Clear Image"/> 
             <property name="name2" type="String" label="Enter Name"/>
             <property name="position2" type="String"  label="Enter Position"></property>
           
@@ -62,6 +67,7 @@
 <!-- four profile -->
 
             <property name="contentId4" type="ContentReference" filter="cms_image" default="" label="Select image for profile"/>
+             <property name="footer4" type="Boolean" label="Clear Image"/> 
             <property name="name3" type="String" label="Enter Name"/>
             <property name="position3" type="String"  label="Enter Position"></property>
        
@@ -71,6 +77,7 @@
 <!-- fifth profile -->
 
             <property name="contentId5" type="ContentReference" filter="cms_image" default="" label="Select image for profile"/>
+             <property name="footer5" type="Boolean" label="Clear Image"/> 
             <property name="name4" type="String" label="Enter Name"/>
             <property name="position4" type="String"  label="Enter Position"></property>
         
@@ -81,6 +88,7 @@
 <!-- Sixth profile -->
 
             <property name="contentId6" type="ContentReference" filter="cms_image" default="" label="Select image for profile"/> 
+             <property name="footer6" type="Boolean" label="Clear Image"/> 
             <property name="name5" type="String" label="Enter Name"/>
             <property name="position5" type="String"  label="Enter Position"></property>
           
@@ -90,6 +98,7 @@
 <!-- Seven profile -->
 
             <property name="contentId7" type="ContentReference" filter="cms_image" default="" label="Select image for profile"/>
+             <property name="footer7" type="Boolean" label="Clear Image"/> 
             <property name="name6" type="String" label="Enter Name"/>
             <property name="position6" type="String"  label="Enter Position"></property>
          
@@ -99,6 +108,7 @@
 <!-- Eight profile -->
 
             <property name="contentId8" type="ContentReference" filter="cms_image" default="" label="Select image for profile"/>
+             <property name="footer8" type="Boolean" label="Clear Image"/> 
             <property name="name7" type="String" label="Enter Name"/>
             <property name="position7" type="String"  label="Enter Position"></property>
 
@@ -108,6 +118,7 @@
 
           <!-- Nine profile -->
           <property name="contentId9" type="ContentReference" filter="cms_image" default="" label="Select image for profile"/>
+           <property name="footer9" type="Boolean" label="Clear Image"/> 
             <property name="name8" type="String" label="Enter Name"/>
             <property name="position8" type="String"  label="Enter Position"></property>
 

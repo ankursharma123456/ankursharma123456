@@ -15,6 +15,16 @@ export default class Zehntech2 extends LightningElement {
   @api linkdinicon = teamsicons + '/icon/icons8-linkedin.svg';
   
     @api networkName;
+    // clear image checkbox
+    @api footer1 = false;  
+    @api footer2 = false;  
+    @api footer3 = false;  
+    @api footer4 = false;     
+    @api footer5 = false; 
+    @api footer6 = false; 
+    @api footer7 = false; 
+    @api footer8 = false; 
+    @api footer9 = false; 
     
 
     @api facebook;
@@ -262,6 +272,62 @@ export default class Zehntech2 extends LightningElement {
       }
       get eightdiv(){
         return !!this.imageUrl8;
+      }
+      get ninediv(){
+        return !!this.imageUrl9;
+      }
+  //div hide 
+      get imageOptn() {
+
+        return !!this.imageUrl;
+    
+      }
+
+      get imageOptn1() {
+
+        return !!this.imageUrl2;
+    
+      }
+
+      get imageOptn2() {
+
+        return !!this.imageUrl3;
+    
+      }
+
+      get imageOptn3() {
+
+        return !!this.imageUrl4;
+    
+      }
+
+      get imageOptn4() {
+
+        return !!this.imageUrl5;
+    
+      }
+
+      get imageOptn5() {
+
+        return !!this.imageUrl6;
+    
+      }
+
+      get imageOptn6() {
+
+        return !!this.imageUrl7;
+    
+      }
+      get imageOptn7() {
+
+        return !!this.imageUrl8;
+    
+      }
+
+      get imageOptn8() {
+
+        return !!this.imageUrl9;
+    
       }
      
      handleClick = () => {
@@ -523,7 +589,7 @@ export default class Zehntech2 extends LightningElement {
 
      }
 
-    
+    //carousel
      
      connectedCallback() {
         
@@ -543,7 +609,7 @@ export default class Zehntech2 extends LightningElement {
              } else {
                  this.previous();
              }
-         }, 8000);
+         }, 800000); //set time for carousel
      }
 
      previous() {
